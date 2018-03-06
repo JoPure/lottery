@@ -1,0 +1,632 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    min-width: 50rem;
+    min-height: 40rem;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    font-family: 'Layiji MaHaNiYom BAO','Tahoma Regular','PingFang','Tahoma','Arial',"Microsoft YaHei",sans-serif;
+    font-size: 20px;
+    background: white;
+}
+
+body{
+    background: url(../img/bg.png) top center repeat;
+    background-size: cover;
+}
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+img{
+    display: block;
+}
+
+input{
+    outline: none;
+    padding: 0;
+}
+
+
+h1,h2{
+    display: block;
+    color: #2ba8f8;
+}
+
+h1{
+    font-weight: 400;
+}
+
+h2{
+    font-weight: 100;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    height: 400%;
+    position: relative;
+}
+
+.logo{
+    width: 11.8rem;
+    top: -13rem;
+    left: -2rem;
+    position: absolute;
+}
+
+.page{
+    width: 100%;
+    height: 25%;
+    position: relative;
+}
+
+.page-1 .content{
+    width: 70.2rem;
+    height: 37.95rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -31.2rem;
+    margin-top: -16.65rem;
+    background: url(../img/content-1.png) center no-repeat;
+    background-size: contain;
+}
+
+.page-2 .content{
+    width: 66.65rem;
+    height: 37.25rem;
+    left: 50%;
+    top: 50%;
+    margin-left: -35.8rem;
+    margin-top: -17.0rem;
+    position: absolute;
+    background: url(../img/content-2.png) center no-repeat;
+    background-size: contain;
+}
+
+.page-3 .content{
+    width: 93.05rem;
+    height: 39.7rem;
+    left: 50%;
+    top: 50%;
+    margin-left: -47.9rem;
+    margin-top: -17.3rem;
+    position: absolute;
+    background: url(../img/content-3.png) center no-repeat;
+    background-size: contain;
+}
+
+
+.page-4 .content{
+    width: 96.0rem;
+    height: 43.85rem;
+    left: 50%;
+    top: 50%;
+    margin-left: -48.0rem;
+    margin-top: -19.25rem;
+    position: absolute;
+    background: url(../img/content-4.png) center no-repeat;
+    background-size: contain;
+}
+
+.page-1 .detail{
+    width: 27.5rem;
+    height: 17.5rem;
+    top: 3.25rem;
+    left: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 2.0rem;
+    position: absolute;
+}
+
+
+.title-1{
+    width: 27.05rem;
+    position: relative;
+}
+
+.time{
+    margin-top: -0.5rem;
+    color: #4e4e4e;
+}
+
+.info{
+    color: #ab6808;
+    font-family: 'Tahoma Regular','Tahoma',sans-serif;
+}
+
+.logout{
+    color: #3e90e3;
+    cursor: pointer;
+}
+
+.btn-login{
+    width: 9.0rem;
+    height: 2.6rem;
+    margin-top: 0.5rem;
+    display: table-cell;
+    position: relative;
+    background: url(../img/btn-login.png) center no-repeat;
+    background-size: contain;
+}
+
+.btn-history{
+    width: 9.0rem;
+    height: 2.6rem;
+    position: relative;
+    display: table-cell;
+    background: url(../img/btn-history.png) center no-repeat;
+    background-size: contain;
+}
+
+.page-2 .detail{
+    width: 30.0rem;
+    height: 32.5rem;
+    top: 1.5rem;
+    right: 7.85rem;
+    position: absolute;
+}
+
+.title-2{
+    width: 31.55rem;
+    position: relative;
+}
+
+.title-2-1{
+    width: 19.75rem;
+    margin-top: 2.3rem;
+    position: relative;
+}
+
+.gift{
+    display: inline-block;
+    position: relative;
+    margin-top: 4.75rem;
+    margin-right: 2.4rem;
+    margin-left: 3.15rem;
+}
+
+.gift-1{
+    width: 3.3rem;
+}
+.gift-2{
+    width: 3.2rem;
+}
+.gift-3{
+    width: 3.35rem;
+}
+
+.btn-daygift{
+    width: 12.0rem;
+    height: 3.0rem;
+    position: relative;
+    margin-top: 8.1rem;
+    background: url(../img/btn-daygift.png) center no-repeat;
+    background-size: contain;
+}
+
+.page-3 .detail{
+    width: 30.0rem;
+    height: 30.0rem;
+    position: absolute;
+    left: 18.85rem;
+    top: 0.85rem;
+}
+
+.title-3{
+    width: 21.55rem;
+    position: relative;
+}
+
+.wrap-start{
+    width: 3.95rem;
+    height: 5.95rem;
+    position: relative;
+    margin-top: 8.75rem;
+    margin-left: 13.6rem;
+}
+
+.btn-start{
+    width: 3.95rem;
+    height: 5.95rem;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: url(../img/btn-start.png) center top no-repeat;
+    background-size: contain;
+}
+
+.btn_run{
+    width: 2.6rem;
+    height: 2.2rem;
+    margin-top: 2.3rem;
+    background: url(../img/btn_run.png) center top no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.page-4 .detail{
+    width: 26.25rem;
+    height: 25.0rem;
+    top: 12%;
+    left: 50%;
+    margin-top: -1.0rem;
+    margin-left: -2.5rem;
+    position: absolute;
+}
+
+.title-4{
+    width: 14.7rem;
+    position: relative;
+}
+
+.rule{
+    width: 26.1rem;
+    height: 12.5rem;
+    margin-top: 6.75rem;
+    position: relative;
+}
+
+.box-download{
+    width: 9.0rem;
+    top: 50%;
+    left: 50%;
+    margin-top: -7.5rem;
+    margin-left: 28rem;
+    font-size: 0.6rem;
+    color: #989898;
+    position: fixed;
+}
+
+.qrcode{
+    width: 5.0rem;
+    height: 5.0rem;
+    margin-bottom: 1.0rem;
+    position: relative;
+}
+
+.box-download a{
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.box-download a p{
+    white-space: nowrap;
+}
+
+.link-google img{
+    width: 0.75rem;
+}
+
+.link-fb img{
+    width: 0.4rem;
+}
+
+.link-app img{
+    width: 0.75rem;
+}
+
+.box-nav{
+    top: 50%;
+    left: 50%;
+    color: #989898;
+    margin-top: -9rem;
+    margin-left: -35rem;
+    font-size: 0.6rem;
+    position: fixed;
+}
+
+.box-nav div{
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-top: 1.0rem;
+    line-height: 1.6rem;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.5;
+    filter: alpha(opacity=80);
+    background: url(../img/bg-num.png) center no-repeat;
+    background-size: contain;
+}
+
+.box-nav div.active{
+    opacity: 1;
+}
+
+.footer{
+    width: 50.0rem;
+    line-height: 2.0rem;
+    height: 2.0rem;
+    left: 50%;
+    margin-left: -25.0rem;
+    text-align: left;
+    bottom: 1.5rem;
+    color: #989898;
+    font-size: 0.7rem;
+    position: fixed;
+}
+
+.footer p{
+    display: block;
+    float: left;
+}
+
+.footer span{
+    letter-spacing: 0.1rem;
+}
+
+.down,
+.up{
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+    cursor: pointer;
+}
+
+.win{
+    width: 45.1rem;
+    height: 31.4rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    display: none;
+    margin-left: -22.55rem;
+    margin-top: -15.7rem;
+    background: url(../img/bg-win.png) center no-repeat;
+    background-size: contain;
+}
+
+.win-content{
+    width: 35.3rem;
+    height: 18.15rem;
+    margin: 7rem 6rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn-close{
+    width: 1.15rem;
+    height: 1.15rem;
+    position: absolute;
+    top: 5.65rem;
+    right: 2.9rem;
+    background: url(../img/btn-close.png) center no-repeat;
+    background-size: contain;
+}
+
+.line-user{
+    margin-top: 2.0rem;
+}
+
+.line-password{
+    margin-top: 1.0rem;
+}
+
+.line-password,
+.line-user{
+    width: 25.0rem;
+    font-size: 1.2rem;
+    line-height: 2.0rem;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    /*font-family: 'UVNMangTre',sans-serif;*/
+}
+
+.line-password p,
+.line-user p{
+    width: 5.2rem;
+    display: block;
+    float: left;
+    text-align: right;
+    position: relative;
+}
+
+.line-user input,
+.line-password input{
+    height: 2.0rem;
+    width: 10.55rem;
+    line-height: 2.0rem;
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+    margin-left: 1.5rem;
+    float: left;
+    text-align: left;
+    position: relative;
+}
+
+.login,
+.btn-fb{
+    width: 11.75rem;
+    height: 2.6rem;
+    margin-top: 1.0rem;
+    position: relative;
+}
+
+.login{
+    background: url(../img/login.png) center no-repeat;
+    background-size: contain;
+}
+
+.btn-fb{
+    background: url(../img/btn-fb.png) center no-repeat;
+    background-size: contain;
+}
+
+.line{
+    width: 26.0rem;
+    height: 0.1rem;
+    border: none;
+    margin-top: 0.75rem;
+    position: relative;
+    border-bottom: dashed 0.2rem #b8b8b8;
+}
+
+.win.active{
+    display: block;
+}
+
+.tit-server{
+    width: 6.95rem;
+    height: 1.05rem;
+    position: relative;
+    margin-top: 6.5rem;
+}
+
+.server{
+    width: 14.3rem;
+    height: 2.0rem;
+    line-height: 2.0rem;
+    font-size: 0.9rem;
+    margin-top: 1.0rem;
+}
+
+.win-alert p{
+    font-size: 1.2rem;
+    color: #444;
+    margin-top: 8.3rem;
+    padding-left: 2.5rem;
+    text-align: center;
+}
+
+.win{
+    z-index: 1000;
+}
+
+.wrap{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 99;
+    display: none;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    background: black;
+}
+
+.win-result img{
+    margin-top: 3rem;
+}
+
+.win-result p{
+    font-size: 1.2rem;
+    color: #444;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.win-history .win-content img{
+    width: 6.1rem;
+    height: 1.0rem;
+    margin-top: 3.0rem;
+    position: relative;
+}
+
+.list-code{
+    width: 32.0rem;
+    height: 12.5rem;
+    overflow: hidden;
+    position: relative;
+    background: url(../img/list-code.png) center no-repeat;
+    background-size: contain;
+}
+
+.title-code{
+    width: 14.0rem;
+    margin-top: 0.45rem;
+    float: left;
+    position: fixed;
+}
+
+.title-code p{
+    width: 49%;
+    height: 2.0rem;
+    line-height: 2.0rem;
+    display: block;
+    float: left;
+}
+
+.title-code.right{
+    margin-left: 18.1rem;
+}
+
+.list-code ul{
+    height: 10.0rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    list-style: none;
+    margin-top: 3.0rem;
+}
+
+.list-code ul li{
+    width: 14.0rem;
+    height: 2.0rem;
+    float: left;
+}
+
+.list-code ul li p{
+    width: 49%;
+    height: 2.0rem;
+    line-height: 2.0rem;
+    display: block;
+    float: left;
+}
+
+.list-code ul li._t{
+    margin-left: 4.0rem;
+}
+
+@media screen and (max-width: 1921px){
+    html,body{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1432px){
+    html,body{
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 1339px){
+    html,body{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1281px){
+    html,body{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    html,body{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    html,body{
+        font-size: 12px;
+    }
+}
+

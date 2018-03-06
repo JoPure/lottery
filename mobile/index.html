@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手机端抽奖</title>
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="target-densitydpi=device-dpi,width=750,user-scalable=no">
+    <link rel="stylesheet" href="css/main.css">
+    <!--<link rel="stylesheet" href="css/swiper.min.css">-->
+    <link rel="stylesheet" href="css/animation.css">
+    <script src="js/flexible_css.js"></script>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper" id="slider">
+        <section class="slide" id="1">
+            <div class="title">
+                <p class="time"></p>
+            </div>
+            <div class="index-bg">
+                <p class="pic-1 role-1"></p>
+                <p class="pic-2 role-2"></p>
+            </div>
+            <button class="btn-login"></button>
+            <button class="rule"></button>
+        </section>
+        <section class="slide" id="2">
+            <div class="title2"></div>
+            <div class="clear" style="clear:both"></div>
+            <div class="index-bg2">
+                <div class="eat">
+                    <p class="eat-p1"></p>
+                    <p class="eat-p2"></p>
+                    <p class="eat-p3"></p>
+                </div>
+                <div class="bg-2">
+                    <div class="bing-2"></div>
+                </div>
+            </div>
+            <button class="giftBtn"></button>
+        </section>
+        <section class="slide" id="3">
+            <div class="title-3"></div>
+            <div class="index-bg3">
+                <div class="lottery-box">
+                    <div class="lotteryBg">
+                        <img src="img/start.png" id="goBtn">
+                        <button id="btn_run"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="slide" id="4">
+            <div class="title-4"></div>
+            <div class="index-bg4">
+                <div class="dl"></div>
+                <div class="rules">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="login-box win">
+        <div class="closeBtn btn-close"></div>
+        <div class="pbox">
+            <p class="p1"></p>
+            <input class="input1 username" type="text" placeholder="">
+        </div>
+        <div class="pbox">
+            <p class="p2"></p>
+            <input class="input2 password" type="password" placeholder="">
+        </div>
+        <div class="clear" style="clear: both"></div>
+        <div class="box">
+            <button class="login"></button>
+        </div>
+        <div class="box">
+            <button class="fbBtn"></button>
+        </div>
+    </div>
+    <div class="code-box">
+        <div class="code-main">
+            <div class="jhmCode-box">
+                <p>sdfsdfsdfsdf</p>
+                <p>sdfsdfsdfsdf</p>
+                <p>sdfsdfsdfsdf</p>
+            </div>
+            <div class="giftCode-box">
+                <p>sdfsdfsdfsdf</p>
+                <p>sdfsdfsdfsdf</p>
+                <p>sdfsdfsdfsdf</p>
+            </div>
+        </div>
+    </div>
+    <div class="down-box">
+        <a class="android" href=""></a>
+        <a class="ios" href=""></a>
+        <a class="fb" href=""></a>
+        <p class="down-tip"></p>
+        <p class="reset"></p>
+    </div>
+    <div class="blackBg wrap"></div>
+    <div class="pull_down resize" id="array">﹀</div>
+</div>
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/zy_event.js"></script>
+<script>
+    $(".swiper-wrapper").on("touchmove",function(e){
+        e.preventDefault();
+    });
+    var page = 0;
+    new zyEvent(document.getElementById("slider"), 'up', slideUp);
+    new zyEvent(document.getElementById("slider"), 'down', slideDown);
+
+    function slideUp(){
+        if(page<3){
+            page++;
+        }
+        $(".swiper-wrapper").animate({
+            top: page*(-25)+'%'
+        },800)
+    }
+    function slideDown(){
+        if(page>0){
+            page--;
+        }
+        $(".swiper-wrapper").animate({
+            top: page*(-25)+'%'
+        },800)
+    }
+</script>
+</body>
+</html>
